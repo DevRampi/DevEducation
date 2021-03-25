@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Paint</title>
+</head>
+<body>
+  <div class="layout">
+    <canvas id="paint" width="550" height="550"></canvas>
+    <input type="color" data-pick="color" />
+    <input type="range" data-pick="panWidth" min="1" max="10" value="1" />
+    <div class="holder">
+      <button class="btn" data-figure="square">Square</button>
+      <button class="btn" data-figure="ellipse">Ellipse</button>
+      <button class="btn" data-figure="curve">Curve</button>
+      <button class="btn btn--active" data-figure="line">Line</button>
+    </div>
+  </div>
+  
+  <div id="mocha"></div>
+
+  <script src="https://unpkg.com/chai/chai.js"></script>
+  <script src="https://unpkg.com/mocha/mocha.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/test.js"></script>
+</body>
+</html>

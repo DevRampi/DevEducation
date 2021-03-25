@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.layout {
+  margin: auto;
+  width: 550px;
+}
+canvas {
+  border: solid;
+  display: block;
+}
+.holder {
+  padding-top: 15px;
+}
+.btn {
+  display: inline-block;
+  border: 1px solid #666;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.btn:hover {
+  background-color: #eaeaea;
+}
+.btn--active,
+.btn--active:hover {
+  background-color: #94cc7d;
+}
