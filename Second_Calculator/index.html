@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    let assert = chai.assert;
+  </script>
+</head>
+
+<body>
+<form name="calc" id="calculator">
+	<table>
+	<tr>
+	<td>
+		<input type="text" id="show_result" placeholder="0" class="display" disabled>
+	</td>
+	</tr>
+	<tr class="firstPanel"> 
+    <td class="firstPanel_rows">
+      <input type="button" id="_rad" onclick="pressRad()" value="Rad" >
+      <input type="button" id="_deg" name="2" onclick="pressDeg()" value="Deg" >
+      <input type="button" id="_fact" onclick="pressFact()" value="x!" >
+      <input type="button" id="_br_lft" onclick="pressBrl()" value="(" >
+      <input type="button" id="_br_rght" onclick="pressBrr()" value=")" >
+      <input type="button" id="_prcnt" onclick="pressPrc()" value="%" >
+      <input type="button" id="_clean" onclick="pressClean()" value="AC" >
+    </td>  
+  </tr>
+  	<tr class="secondPanel"> 
+    <td class="secondPanel_rows">
+      <input type="button" id="_inv" onclick="pressInv()" value="Inv" >
+      <input type="button" id="_sin" onclick="pressSin()" value="sin" >
+      <input type="button" id="_ln" onclick="pressLn()" value="ln">
+      <input type="button" id="_seven" onclick="pressSeven()" value="7" >
+      <input type="button" id="_eight" onclick="pressEight()" value="8" >
+      <input type="button" id="_nine" onclick="pressNine()" value="9" >
+      <input type="button" id="_div" onclick="pressDiv()" value="&#247;" >
+  </td>  
+  </tr>
+  <tr class="thirdPanel"> 
+    <td class="thirdPanel_rows">
+  <input type="button" id="_numpi" onclick="pressPi()" value="&#960;" >
+  <input type="button" id="_cos" onclick="pressCos()" value="cos" >
+  <input type="button" id="_log" onclick="pressLog()" value="log" >
+  <input type="button" id="_four" onclick="pressFour()" value="4" >
+  <input type="button" id="_five" onclick="pressFive()" value="5" >
+  <input type="button" id="_six" onclick="pressSix()" value="6" >
+  <input type="button" id="_multi" onclick="pressMulti()" value="&#215;" >
+  </td>  
+  </tr>
+  <tr class="fourthPanel"> 
+    <td class="fourthPanel_rows">
+  <input type="button" id="_consta" onclick="pressE()" value="e" >
+  <input type="button" id="_tan" onclick="pressTan()" value="tan" >
+  <input type="button" id="_sqrt" onclick="pressSqrt()" value="&#8730;">
+  <input type="button" id="_one" onclick="pressOne()" value="1" >
+  <input type="button" id="_two" onclick="pressTwo()" value="2" >
+  <input type="button" id="_three" onclick="pressThree()" value="3" >
+  <input type="button" id="_sub" onclick="pressSub()" value="-" >
+  </td>  
+  </tr>
+  <tr class="fifthPanel"> 
+    <td class="fifthPanel_rows">
+  <input type="button" id="_ans" onclick="pressAns()" value="Ans" >
+  <input type="button" id="_exp" onclick="pressExp()" value="EXP" >
+  <input type="button" id="_degree" onclick="pressDegree()" value="xy" >
+  <input type="button" id="_zero" onclick="pressZero()" value="0" >
+  <input type="button" id="_dot" onclick="pressDot()" value="." >
+  <input type="button" id="_result" onclick="pressResult()" value="=" >
+  <input type="button" id="_add" onclick="pressAdd()" value="+" >
+  </td>  
+  </tr>
+  
+ <div id="temp">tmp</div> 
+  
+   
+
+
+</table>
+</form>	
+<script src="myScript.js"></script>
+<script src="test.js"></script>
+
+  <div id="mocha"></div>
+
+  <script>
+    mocha.run();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+#calculator * {font-size: 26px;}
+#calculator table {border: solid 2px silver; border-spacing: 20px; border-radius: 7px;}
+#temp {color: white;}
+#show_result {background-color: white;}
+
+input.display {width: 582px; text-align: end; border-radius: 7px; padding: 40px 10px 10px 0;}
+input[type = button] {width: 78px; height: 36px; border: solid 1px silver; background-color: #DCDCDC;}
+input[type = button]:hover {
+  background-color: DarkGray;
+  border: solid 1px #696969;
+}
+input[type = button]{ border-radius: 5px; }
+.fifthPanel_rows #_result:hover {
+  background-color: #1E90FF; color: white;
+}
+.secondPanel_rows #_div:hover {
+  background-color: #1E90FF; color: white;
+}
+.thirdPanel_rows #_multi:hover {
+  background-color: #1E90FF; color: white;
+}
+.fourthPanel_rows #_sub:hover {
+  background-color: #1E90FF; color: white;
+}
+.fifthPanel_rows #_add:hover {
+  background-color: #1E90FF; color: white;
+}
